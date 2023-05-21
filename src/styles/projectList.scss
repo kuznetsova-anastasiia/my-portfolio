@@ -1,7 +1,13 @@
+@import './utils/mixins.scss';
+
 .project-list {
   display: grid;
-  grid-template-columns: repeat(2, 500px);
-  column-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
   row-gap: 40px;
   margin-bottom: 50px;
+
+  @include onMobile {
+    grid-template-columns: 1fr;
+  }
 }

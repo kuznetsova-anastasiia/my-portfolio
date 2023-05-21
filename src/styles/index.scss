@@ -1,6 +1,7 @@
 @import './utils/reset.scss';
 @import './utils/variables.scss';
-
+@import './utils/mixins.scss'
+;
 :root {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 16px;
@@ -10,4 +11,12 @@
 
 .container {
   padding: 0 120px;
+
+  @include onTablet {
+    padding: 0 80px;
+  }
+
+  @include onMobile {
+    padding: 0 40px;
+  }
 }

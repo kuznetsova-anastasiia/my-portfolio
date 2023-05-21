@@ -1,4 +1,5 @@
 @import './utils/variables.scss';
+@import './utils/mixins.scss';
 
 .footer {
   display: flex;
@@ -9,12 +10,24 @@
   padding: 20px;
   margin-bottom: 15px;
 
+  @include onMobile {
+    padding: 10px;
+  }
+
   &__title {
     margin-bottom: 20px;
+
+    @include onMobile {
+      font-size: 18px;
+    }
   }
 
   &__message {
     margin-bottom: 70px;
+
+    @include onMobile {
+      font-size: 14px;
+    }
   }
 
   &__up-button {

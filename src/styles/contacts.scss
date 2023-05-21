@@ -1,9 +1,14 @@
 @import './utils/variables.scss';
+@import './utils/mixins.scss';
 
 .contacts {
   display: flex;
   gap: 20px;
   align-items: center;
+  
+  @include onMobile {
+    gap: 10px;
+  }
 
   &__button-link {
     display: block;
@@ -11,6 +16,7 @@
     border-radius: 10px;
     border: 1px solid $color-dark;
     background-color: $color-light;
+    text-align: center;
   
     font-weight: 500;
   
@@ -20,6 +26,10 @@
       background-color: $color-accent;
       color: $color-light;
       transform: scale(1.05);
+    }
+
+    @include onMobile {
+      font-size: 14px;
     }
   }
   
