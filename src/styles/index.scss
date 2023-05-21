@@ -1,0 +1,13 @@
+@import './utils/reset.scss';
+@import './utils/variables.scss';
+
+:root {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  color: $color-dark;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 120px;
+}

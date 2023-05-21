@@ -1,0 +1,56 @@
+@import './utils/variables.scss';
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  grid-column: auto;
+  width: 470px;
+  padding: 30px;
+  background: #90765631;
+  border-radius: 8px;
+  transition: 0.7s;
+
+  &:hover {
+    transform: scale(1.02);
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__about {
+    font-size: 12px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    width: 90%;
+  }
+
+  &__link {
+    background-color: $color-light;
+    padding: 5px 5px 2px;
+    height: fit-content;
+    border-radius: 50%;
+    transition: 0.7s;
+
+    &:hover {
+      transform: translate(15%, -15%);
+      background-color: $color-accent;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
